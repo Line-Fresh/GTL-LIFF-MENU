@@ -126,7 +126,7 @@ const GuideCard = (props) => {
 
     return (
         <>
-            <Card sx={{ display: 'flex' }} style={{marginTop: "10px", marginBottom: "8px", height: "140px", backgroundColor: "white"}}>
+            <Card sx={{ display: 'flex' }} style={{marginTop: "10px", marginBottom: "8px", height: "90px", backgroundColor: "white"}}>
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 <CardMedia
                     component="img"
@@ -140,14 +140,13 @@ const GuideCard = (props) => {
                     {data.name}
                     </Typography>
                     <Typography variant="body2" className={classes.wrapIcon}>
-                    旅遊時間：{data.time}
+                    預約時間：{data.time}
                     </Typography><br/>
-                    <Typography variant="body2" className={classes.wrapIcon}>
+                    {/* <Typography variant="body2" className={classes.wrapIcon}>
                     旅遊地點：{data.place}
-                    </Typography><br/>
-                    <br/>
+                    </Typography><br/> */}
                     <Typography variant="body2" className={classes.wrapIcon}>
-                        <Button variant="outlined" onClick={handleOpen} size="small" >撰寫回饋</Button>
+                        <Button variant="outlined" onClick={handleOpen} size="small" style={{marginTop:"2px"}}>撰寫回饋</Button>
                     </Typography>
                 </CardContent>
                 </Box>

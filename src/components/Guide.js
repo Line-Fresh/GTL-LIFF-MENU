@@ -18,19 +18,19 @@ const guides = [
 const latest = [
     {
       name : "Andy",
-      time : "Mon Sep 21",
+      time : "9/21",
       place : "虎尾驛、虎尾鐵橋",
       imgurl : "https://i.imgur.com/r25G6JY.jpg?1"
     },
     {
       name : "Emily",
-      time : "Sat Dec 19",
+      time : "12/19",
       place : "雲林布袋戲館、雲林故事館",
       imgurl : "https://i.imgur.com/m0djPdk.jpg?1"
     },
     {
       name : "Melody",
-      time : "Tue Jul 17",
+      time : "6/17",
       place : "青埔落羽松秘境",
       imgurl : "https://i.imgur.com/L7DKFmw.jpg?1"
     }
