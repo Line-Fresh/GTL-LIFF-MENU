@@ -7,7 +7,7 @@ const Header = (props) => {
 
   return (
     <>
-      <div style={{width: '100%', height: '70px', paddingLeft: '20px', paddingRight: '30px', paddingTop: '30px'}}>
+      <div style={{width: '100%', height: '70px', paddingLeft: '20px', paddingRight: '30px', paddingTop: '15px'}}>
         <div style={{float:'left', marginTop: '3px'}}>
           <Typography variant="h4" style={{fontWeight: '600'}}>
             Dashboard
@@ -16,7 +16,7 @@ const Header = (props) => {
             {state}
           </Typography>
         </div>
-        <div style={{float:'right', marginRight: 60}}>
+        <div style={{float:'right', marginRight: 45, marginTop: 10}}>
           <Avatar src={profile.pictureUrl} variant="rounded" sx={{ width: 50, height: 50 }}/>
         </div>
       </div>
