@@ -7,12 +7,12 @@ const Header = (props) => {
 
   return (
     <>
-      <div style={{width: '100%', height: '80px', paddingLeft: '20px', paddingRight: '30px', paddingTop: '30px'}}>
+      <div style={{width: '100%', height: '70px', paddingLeft: '20px', paddingRight: '30px', paddingTop: '30px'}}>
         <div style={{float:'left', marginTop: '3px'}}>
           <Typography variant="h4" style={{fontWeight: '600'}}>
             Dashboard
           </Typography>
-          <Typography variant="body1" style={{marginTop: '-5px', marginLeft:'2px'}}>
+          <Typography variant="body1" style={{marginTop: '-5px', marginLeft:'2px', color: 'Dimgrey'}}>
             {state}
           </Typography>
         </div>

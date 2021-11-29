@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.carousel > .slider-wrapper > .slider {
+  height: 160px;
+  background-color: none;
+}
+
+.legend{
+  background: grey!important;
+  opacity: 0;
+}

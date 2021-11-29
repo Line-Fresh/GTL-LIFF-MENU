@@ -25,7 +25,7 @@ const App = () => {
     )
   }
   return (
-    <HomePage profile={profile} />
+    <HomePage profile={profile}/>
   );
 }
 
