@@ -17,7 +17,7 @@ const HomePage = (props) => {
   return (
     <div style={{height:"100%", overflow: "hidden", position: "relative"}}>
       <Header profile={profile} state={state}/>
-      <div style={{height: height-180, overflow: "scroll", paddingTop: 15}}>
+      <div style={{height: height-160, overflow: "scroll", paddingTop: 15}}>
         <Container maxWidth="sm" style={{paddingLeft: 22, paddingRight: 25, marginTop: -18, zIndex: 10 }}>
           {(state === "overview") && <Overview />}
           {(state === "game") && <Game />}
