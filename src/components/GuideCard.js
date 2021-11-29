@@ -126,7 +126,7 @@ const GuideCard = (props) => {
 
     return (
         <>
-            <Card sx={{ display: 'flex' }} style={{marginTop: "10px", marginBottom: "8px", height: "120px", backgroundColor: "white"}}>
+            <Card sx={{ display: 'flex' }} style={{marginTop: "10px", marginBottom: "8px", height: "140px", backgroundColor: "white"}}>
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 <CardMedia
                     component="img"
