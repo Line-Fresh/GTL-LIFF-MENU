@@ -5,37 +5,43 @@ import List from './overview/List'
 import { Calendar, Target, UserCheck, Users } from 'react-feather';
 
 const recents = [
-    {
-      category: "景點預約",
-      name: "古蹟 虎尾糖廠導覽",
-      time: "Mon Dec 20 09:00",
-      icon: <Calendar color='orange' size='24px'/>
-    },
-    {
-      category: "社交群組",
-      name: "虎尾玩透透",
-      time: "Mon Dec 20 13:00",
-      icon: <Users color='green' size='24px'/>
-    },
-    {
-      category: "景點預約",
-      name: "雲林布袋戲館導覽",
-      time: "Mon Dec 20 17:00",
-      icon: <Calendar color='orange' size='24px'/>
-    },
-    {
-      category: "導遊預約", 
-      name: "Johnson Hung",
-      time: "Mon Dec 21 17:00",
-      icon: <UserCheck color='purple' size='24px'/>
-    },
-    {
-      category: "社交群組",
-      name: "虎尾嗨起來",
-      time: "Mon Dec 22 10:00",
-      icon: <Users color='green' size='24px'/>
-    },
-  ]
+  {
+    category: "社交群組",
+    name: "虎尾玩透透",
+    time: "Mon Dec 13 - Tue Dec 14",
+    icon: <Users color='orange' size='24px'/>,
+    people: "2/4",
+    intros: "簡介：我們這團想去體驗虎尾的鄉村美，預計會探訪鐵橋等景點",
+    link: "http://line.me/ti/g/duHaaKnCKy"
+  },
+  {
+    category: "社交群組",
+    name: "虎尾嗨起來",
+    time: "Mon Dec 22",
+    icon: <Users color='#eb345f' size='24px'/>,
+    people: "2/4",
+    intros: "簡介：一起來嗨！！",
+    link: "http://line.me/ti/g/duHaaKnCKy"
+  },
+  {
+    category: "社交群組",
+    name: "虎尾GOGOGO",
+    time: "Mon Dec 10",
+    icon: <Users color='green' size='24px'/>,
+    people: "3/8",
+    intros: "簡介：打算隨意亂走，已經預約一名導遊跟我們一起出遊",
+    link: "http://line.me/ti/g/duHaaKnCKy"
+  },
+  {
+    category: "社交群組",
+    name: "虎尾嗨起來",
+    time: "Mon Dec 11",
+    icon: <Users color='purple' size='24px'/>,
+    people: "2/2",
+    intros: "簡介：想找想深度了解虎尾的人們，不拘性別歡迎大家",
+    link: "http://line.me/ti/g/duHaaKnCKy"
+  },
+]
 
 const Social = (props) => {
 

@@ -4,36 +4,13 @@ import Paper from '@mui/material/Paper';
 import List from './overview/List'
 import { Calendar, Target, UserCheck, Users } from 'react-feather';
 
-const recents = [
-  {
-    category: "景點預約",
-    name: "古蹟 虎尾糖廠導覽",
-    time: "Mon Dec 20 09:00",
-    icon: <Calendar color='orange' size='24px'/>
-  },
-  {
-    category: "社交群組",
-    name: "虎尾玩透透",
-    time: "Mon Dec 20 13:00",
-    icon: <Users color='green' size='24px'/>
-  },
-  {
-    category: "景點預約",
-    name: "雲林布袋戲館導覽",
-    time: "Mon Dec 20 17:00",
-    icon: <Calendar color='orange' size='24px'/>
-  },
+const guides = [
   {
     category: "導遊預約", 
-    name: "Johnson Hung",
+    name: "Andy",
     time: "Mon Dec 21 17:00",
-    icon: <UserCheck color='purple' size='24px'/>
-  },
-  {
-    category: "社交群組",
-    name: "虎尾嗨起來",
-    time: "Mon Dec 22 10:00",
-    icon: <Users color='green' size='24px'/>
+    icon: <UserCheck color='purple' size='24px'/>,
+    intros: "自我介紹：\n在地虎尾人，目前就讀虎尾科大、平常喜歡山林、時常和朋友相約到不同的步道走踏。記憶力極好，除了背下圓周率後50位、對於方向感也很有自信、給我帶路準沒錯！！\n\n導遊亮點：\n1.帥帥高高白白淨淨、知書達禮，\n2.可以提供各種景點間的捷徑\n3.有常備汽車、可順便充當司機帶你在虎尾蛇來蛇去、一身清爽地玩遍虎尾商圈～"
   },
 ]
 
@@ -45,7 +22,7 @@ const Guide = (props) => {
         導遊預約
       </Typography>
       <Paper variant='elevation' elevation={4} style={{marginTop: 10, borderRadius:20}}>   
-        {recents.map((recent, idx) => <List data={recent} key={"list"+idx}/>)}
+        {guides.map((recent, idx) => <List data={recent} key={"list"+idx}/>)}
       </Paper>
       <br/>
       <Typography variant="body2" style={{color: '#484848', fontWeight: 'bold'}}>
