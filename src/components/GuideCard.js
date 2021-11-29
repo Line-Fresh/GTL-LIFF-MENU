@@ -25,6 +25,7 @@ import TextField from '@mui/material/TextField';
 import Rating from '@mui/material/Rating';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import { maxHeight } from '@mui/system';
 
 const useStyles = makeStyles(theme => ({
     wrapIcon: {
@@ -126,28 +127,32 @@ const GuideCard = (props) => {
 
     return (
         <>
-            <Card sx={{ display: 'flex' }} style={{marginTop: "10px", marginBottom: "8px", height: "90px", backgroundColor: "white"}}>
+            <Card sx={{ display: 'flex' }} style={{marginTop: "10px", marginBottom: "8px", height: "65px", borderRadius:20}}>
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 <CardMedia
                     component="img"
-                    sx={{ width: 161 }}
+                    sx={{ width: 65 }}
                     image={data.imgurl}
                 />
                 </Box>
                 <Box >
                 <CardContent style={{marginTop: "-15px"}}>
-                    <Typography variant="body1" style={{ fontWeight: 'bold' }}>
-                    {data.name}
-                    </Typography>
-                    <Typography variant="body2" className={classes.wrapIcon}>
-                    預約時間：{data.time}
-                    </Typography><br/>
+                    <div style={{ float: 'left', paddingTop:10}}>
+                        <Typography variant="caption" style={{color: '#484848'}}>
+                        {data.name}
+                        </Typography><br/>
+                        <Typography variant="subtitle2" className={classes.wrapIcon} style={{ color:'black'}}>
+                        預約時間：{data.time}
+                        </Typography><br/>
+                    </div>
+                    <div style={{ float: 'right', paddingTop: 15, paddingLeft: 45 }}> 
                     {/* <Typography variant="body2" className={classes.wrapIcon}>
                     旅遊地點：{data.place}
                     </Typography><br/> */}
-                    <Typography variant="body2" className={classes.wrapIcon}>
-                        <Button variant="outlined" onClick={handleOpen} size="small" style={{marginTop:"2px"}}>撰寫回饋</Button>
-                    </Typography>
+                    {/* <Typography variant="subtitle2" className={classes.wrapIcon} style={{ float: 'right' }}> */}
+                        <Button variant="outlined" onClick={handleOpen} size="small" style={{marginTop:"4px", maxWidth:75, maxHeight:25, float: 'right'}}>撰寫回饋</Button>
+                    {/* </Typography> */}
+                    </div>
                 </CardContent>
                 </Box>
             </Card>

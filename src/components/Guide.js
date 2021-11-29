@@ -20,13 +20,13 @@ const latest = [
       name : "Andy",
       time : "9/21",
       place : "虎尾驛、虎尾鐵橋",
-      imgurl : "https://i.imgur.com/r25G6JY.jpg?1"
+      imgurl : "https://i.imgur.com/LRrxPaB.jpg"
     },
     {
       name : "Emily",
-      time : "12/19",
+      time : "12/1",
       place : "雲林布袋戲館、雲林故事館",
-      imgurl : "https://i.imgur.com/m0djPdk.jpg?1"
+      imgurl : "https://i.imgur.com/xQ8mHqh.jpg"
     },
     {
       name : "Melody",
