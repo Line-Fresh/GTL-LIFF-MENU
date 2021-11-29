@@ -199,7 +199,6 @@ const GuideCard = (props) => {
                                     onChange={(e) => handleEmail(e)}
                                 /> <br/>
                                 </div>) : null
-                           
                         }
                         {
                             index == 1 ? (<div>

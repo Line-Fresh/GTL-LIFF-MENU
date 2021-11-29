@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import List from './overview/List'
 import { Calendar, Target, UserCheck, Users } from 'react-feather';
-
+import Acheivement from './Acheivement'
 const guides = [
   {
     category: "虎尾鐵道節特別活動", 
@@ -30,6 +30,7 @@ const Game = (props) => {
       <Typography variant="body2" style={{color: '#484848', fontWeight: 'bold'}}>
         目前成就
       </Typography>
+      <Acheivement/>
       <Typography variant="body2" style={{color: '#484848', fontWeight: 'bold'}}>
         歷史戰績
       </Typography>
