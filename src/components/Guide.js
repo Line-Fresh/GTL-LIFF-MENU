@@ -52,12 +52,10 @@ const Guide = (props) => {
         導遊回饋/客訴
       </Typography>
       {
-        latest.map(data=>(
-          <GuideCard data={data}></GuideCard>
+        latest.map((data, idx)=>(
+          <GuideCard data={data} key={"guide"+idx}></GuideCard>
         ))
       }
-      
-      
     </>
   );
 }

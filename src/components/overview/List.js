@@ -11,6 +11,8 @@ import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import LinkIcon from '@mui/icons-material/Link';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -44,7 +46,8 @@ const Link = ({link, icon}) => (
 
 const List = (props) => {
   const {data} = props
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
+  const [openAlert, setOpenAlert] = useState(false)
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -53,6 +56,21 @@ const List = (props) => {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const handleOpenAlert = () => {
+    setOpenAlert(true); 
+  }
+
+  const handleCloseAlert = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+      }
+      setOpenAlert(false);
+  }
+
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  })
 
   return (
     <>
@@ -89,6 +107,7 @@ const List = (props) => {
           <Button 
             variant="contained"
             color="error"
+            onClick={() => {handleOpenAlert(); setOpen(false); }}
           >取消預約/取消登記</Button>
           }
         </DialogActions>
@@ -115,6 +134,11 @@ const List = (props) => {
         <div style={{clear: "both"}}></div>
       </div>
       <Divider variant="middle"/>
+      <Snackbar  open={openAlert} autoHideDuration={6000} onClose={handleCloseAlert}>
+        <Alert onClose={handleCloseAlert} severity="success" sx={{ width: '100%' }}>
+          已刪除！
+        </Alert>
+      </Snackbar> 
     </>
   );
 }
