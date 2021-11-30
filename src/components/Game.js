@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import List from './overview/List'
 import { Calendar, Target, UserCheck, Users } from 'react-feather';
 import Acheivement from './Acheivement'
-import Gift from './Gift'
+import Gift from './Gifts'
 import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
