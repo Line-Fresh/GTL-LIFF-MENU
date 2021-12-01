@@ -13,7 +13,7 @@ const Header = (props) => {
             Dashboard
           </Typography>
           <Typography variant="body1" style={{marginTop: '-5px', marginLeft:'2px', color: 'Dimgrey'}}>
-            {state}
+            {state[0].toUpperCase() + state.slice(1)}
           </Typography>
         </div>
         <div style={{float:'right', marginRight: 45, marginTop: 10}}>

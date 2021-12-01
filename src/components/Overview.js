@@ -48,16 +48,20 @@ const recents = [
 
 const news = [
   {
-    pic_url: "https://cdn2.ettoday.net/images/5745/d5745383.jpg",
-    caption: "最新貼圖合作@知名畫家方塊"
-  },
-  {
     pic_url: "https://lh5.googleusercontent.com/-K0iOYZbsaws/VSJig5BQwOI/AAAAAAAA6oE/1SZQeIiU6vY/w739-h554-no/DSCN4536.JPG",
     caption: "鐵道節遊戲環節即將開始"
   },
   {
+    pic_url: "https://pic.pimg.tw/sai083/1565080244-1582099077.png",
+    caption: "虎珍堂加入霹靂虎尾OA合作夥伴"
+  },
+  {
     pic_url: "https://pic.pimg.tw/luckyday296/1515158764-388050075_n.jpg",
     caption: "雲林落羽松季，歡迎大家共襄盛舉"
+  },
+  {
+    pic_url: "https://i.imgur.com/fsiGywd.png",
+    caption: "最新貼圖合作X知名畫家方塊"
   },
   {
     pic_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCpM8B3LKtV4p7d_n3PyGvao5rPfUucqN_0A&usqp=CAU",
